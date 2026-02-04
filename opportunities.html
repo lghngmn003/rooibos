@@ -7,7 +7,7 @@
     <meta name="description" content="Browse volunteer opportunities with Community of Service. Find shifts for patrol, dispatch, food delivery, and more.">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&family=Open+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Open+Sans:wght@400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
@@ -37,6 +37,7 @@
         <section class="opportunities-section">
             <div class="container">
                 <div class="opportunities-grid">
+                    <!-- Open opportunities -->
                     <a href="https://app.unison.io/directories/1D8eiHtcyvgJV2xJGmAtIt" target="_blank" rel="noopener noreferrer" class="opportunity-card">
                         <div class="card-icon">
                             <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
@@ -48,41 +49,6 @@
                         </div>
                         <h3>New Volunteers</h3>
                         <p>Just getting started? This is the place for new volunteer orientation and onboarding opportunities.</p>
-                        <span class="card-link">View Shifts <span aria-hidden="true">→</span></span>
-                    </a>
-
-                    <a href="https://app.unison.io/directories/3EnUlj6oKApekef90br0Nr" target="_blank" rel="noopener noreferrer" class="opportunity-card">
-                        <div class="card-icon">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                <circle cx="12" cy="12" r="10"></circle>
-                                <polygon points="16.24 7.76 14.12 14.12 7.76 16.24 9.88 9.88 16.24 7.76"></polygon>
-                            </svg>
-                        </div>
-                        <h3>Patrol</h3>
-                        <p>Help keep our community safe by participating in neighborhood patrol shifts.</p>
-                        <span class="card-link">View Shifts <span aria-hidden="true">→</span></span>
-                    </a>
-
-                    <a href="https://app.unison.io/directories/4OSVJavuctii7s3zhpHT83" target="_blank" rel="noopener noreferrer" class="opportunity-card">
-                        <div class="card-icon">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
-                            </svg>
-                        </div>
-                        <h3>Dispatch</h3>
-                        <p>Coordinate volunteer activities and communications from our dispatch center.</p>
-                        <span class="card-link">View Shifts <span aria-hidden="true">→</span></span>
-                    </a>
-
-                    <a href="https://app.unison.io/directories/MbJkhJ8iuDhVxu0aSV3RC" target="_blank" rel="noopener noreferrer" class="opportunity-card">
-                        <div class="card-icon">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                <path d="M9 11l3 3L22 4"></path>
-                                <path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"></path>
-                            </svg>
-                        </div>
-                        <h3>Vetting</h3>
-                        <p>Help review and process new volunteer applications to ensure community safety.</p>
                         <span class="card-link">View Shifts <span aria-hidden="true">→</span></span>
                     </a>
 
@@ -101,7 +67,71 @@
                         <span class="card-link">View Shifts <span aria-hidden="true">→</span></span>
                     </a>
 
-                    <a href="https://app.unison.io/directories/4BeVZ7YXGHMaGwfTdnipOg" target="_blank" rel="noopener noreferrer" class="opportunity-card">
+                    <!-- Restricted opportunities (require approval) -->
+                    <a href="https://app.unison.io/directories/3EnUlj6oKApekef90br0Nr" target="_blank" rel="noopener noreferrer" class="opportunity-card restricted">
+                        <span class="restricted-badge">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect>
+                                <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
+                            </svg>
+                            Approval Required
+                        </span>
+                        <div class="card-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <circle cx="12" cy="12" r="10"></circle>
+                                <polygon points="16.24 7.76 14.12 14.12 7.76 16.24 9.88 9.88 16.24 7.76"></polygon>
+                            </svg>
+                        </div>
+                        <h3>Patrol</h3>
+                        <p>Help keep our community safe by participating in neighborhood patrol shifts.</p>
+                        <span class="card-link">View Shifts <span aria-hidden="true">→</span></span>
+                    </a>
+
+                    <a href="https://app.unison.io/directories/4OSVJavuctii7s3zhpHT83" target="_blank" rel="noopener noreferrer" class="opportunity-card restricted">
+                        <span class="restricted-badge">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect>
+                                <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
+                            </svg>
+                            Approval Required
+                        </span>
+                        <div class="card-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                            </svg>
+                        </div>
+                        <h3>Dispatch</h3>
+                        <p>Coordinate volunteer activities and communications from our dispatch center.</p>
+                        <span class="card-link">View Shifts <span aria-hidden="true">→</span></span>
+                    </a>
+
+                    <a href="https://app.unison.io/directories/MbJkhJ8iuDhVxu0aSV3RC" target="_blank" rel="noopener noreferrer" class="opportunity-card restricted">
+                        <span class="restricted-badge">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect>
+                                <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
+                            </svg>
+                            Approval Required
+                        </span>
+                        <div class="card-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M9 11l3 3L22 4"></path>
+                                <path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"></path>
+                            </svg>
+                        </div>
+                        <h3>Vetting</h3>
+                        <p>Help review and process new volunteer applications to ensure community safety.</p>
+                        <span class="card-link">View Shifts <span aria-hidden="true">→</span></span>
+                    </a>
+
+                    <a href="https://app.unison.io/directories/4BeVZ7YXGHMaGwfTdnipOg" target="_blank" rel="noopener noreferrer" class="opportunity-card restricted">
+                        <span class="restricted-badge">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect>
+                                <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
+                            </svg>
+                            Approval Required
+                        </span>
                         <div class="card-icon">
                             <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                                 <rect x="1" y="3" width="15" height="13"></rect>
@@ -115,7 +145,14 @@
                         <span class="card-link">View Shifts <span aria-hidden="true">→</span></span>
                     </a>
 
-                    <a href="https://app.unison.io/directories/4ZoQC4QLUHOfNfYOUAvRKT" target="_blank" rel="noopener noreferrer" class="opportunity-card">
+                    <a href="https://app.unison.io/directories/4ZoQC4QLUHOfNfYOUAvRKT" target="_blank" rel="noopener noreferrer" class="opportunity-card restricted">
+                        <span class="restricted-badge">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect>
+                                <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
+                            </svg>
+                            Approval Required
+                        </span>
                         <div class="card-icon">
                             <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                                 <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>

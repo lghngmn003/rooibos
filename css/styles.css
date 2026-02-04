@@ -16,7 +16,7 @@
     --color-white: #ffffff;
 
     /* Typography */
-    --font-heading: 'Nunito', sans-serif;
+    --font-heading: 'Inter', sans-serif;
     --font-body: 'Open Sans', sans-serif;
 
     /* Spacing */
@@ -332,6 +332,18 @@ img {
     margin: 0 auto;
 }
 
+.btn-header {
+    display: inline-block;
+    margin-top: var(--spacing-md);
+    background-color: var(--color-white);
+    color: var(--color-primary);
+}
+
+.btn-header:hover {
+    background-color: var(--color-neutral-light);
+    color: var(--color-primary-dark);
+}
+
 /* ----- Mission Section ----- */
 .mission {
     background-color: var(--color-white);
@@ -551,6 +563,37 @@ img {
 
 .opportunity-card:hover .card-link {
     color: var(--color-primary-dark);
+}
+
+/* Restricted opportunity cards */
+.opportunity-card.restricted {
+    position: relative;
+}
+
+.opportunity-card.restricted .card-icon {
+    background-color: #e8e8e8;
+}
+
+.restricted-badge {
+    position: absolute;
+    top: var(--spacing-md);
+    right: var(--spacing-md);
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    background-color: var(--color-neutral-dark);
+    color: var(--color-white);
+    font-size: 0.7rem;
+    font-weight: 600;
+    padding: 4px 8px;
+    border-radius: var(--radius-full);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.restricted-badge svg {
+    width: 12px;
+    height: 12px;
 }
 
 /* ----- Resources Section ----- */
