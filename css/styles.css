@@ -382,12 +382,15 @@ img {
 }
 
 .involvement-card {
+    display: block;
     background-color: var(--color-white);
     padding: var(--spacing-lg);
     border-radius: var(--radius-lg);
     box-shadow: var(--shadow-sm);
     text-align: center;
     transition: all var(--transition-normal);
+    text-decoration: none;
+    color: inherit;
 }
 
 .involvement-card:hover {
