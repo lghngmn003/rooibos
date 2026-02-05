@@ -1,6 +1,6 @@
-# Community of Service
+# ServeScott
 
-Volunteer coordination landing page for Southwest Minnesota Metro.
+Volunteer coordination hub for Scott County, Minnesota.
 
 ## Local Development
 
