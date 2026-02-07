@@ -587,20 +587,23 @@ img {
     right: var(--spacing-md);
     display: flex;
     align-items: center;
-    gap: 4px;
+    gap: 6px;
     background-color: var(--color-neutral-dark);
     color: var(--color-white);
-    font-size: 0.7rem;
+    font-size: 0.65rem;
     font-weight: 600;
-    padding: 4px 8px;
-    border-radius: var(--radius-full);
+    padding: 6px 10px;
+    border-radius: var(--radius-md);
     text-transform: uppercase;
-    letter-spacing: 0.5px;
+    letter-spacing: 0.3px;
+    line-height: 1.3;
+    text-align: left;
 }
 
 .restricted-badge svg {
-    width: 12px;
-    height: 12px;
+    width: 16px;
+    height: 16px;
+    flex-shrink: 0;
 }
 
 /* ----- Resources Section ----- */
