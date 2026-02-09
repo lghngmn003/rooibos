@@ -606,6 +606,10 @@ img {
     flex-shrink: 0;
 }
 
+.restricted-badge.experience {
+    background-color: var(--color-primary);
+}
+
 /* ----- Resources Section ----- */
 .resources-section {
     padding: var(--spacing-xxl) var(--spacing-md);
